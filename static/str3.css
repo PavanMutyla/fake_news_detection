@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	font-family: sans-serif;
+	background: #f8f8f8;
+    background: url("signupbg.webp");
+}
+
+.signup-box {
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #191919;
+	padding: 40px;
+	background: #f4f4f4;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.signup-box h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.signup-box .user-box {
+	position: relative;
+}
+
+.signup-box .user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #191919;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #191919;
+	outline: none;
+	background: transparent;
+}
+
+.signup-box .user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	color: #191919;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.signup-box .user-box input:focus ~ label,
+.signup-box .user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #191919;
+	font-size: 12px;
+}
+
+.signup-box button {
+	background: #191919;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.signup-box button:hover {
+	background: #fff;
+	color: #191919;
+}

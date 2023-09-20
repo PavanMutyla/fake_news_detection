@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background: #f8f8f8;
+    /* background-image:url("homebf.avif"); */
+}
+
+nav {
+	background: #191919;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px;
+	background: #fff;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+    background-image:url("homebf.avif");}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #191919;
+}
+
+form input[type="file"],
+form textarea {
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background: #f8f8f8;
+}
+
+form input[type="file"] {
+	cursor: pointer;
+}
+
+form textarea {
+    resize: vertical;
+    /* display: inline; */
+    height: 100px;
+    width: 100%;
+}
+
+form button[type="button"] {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background: #191919;
+	color: #fff;
+	cursor: pointer;
+}
+
+form button[type="button"]:hover {
+	background: #fff;
+	color: #191919;
+}
+

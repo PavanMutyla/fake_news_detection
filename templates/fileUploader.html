@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Uploader</title>
+	<link rel="stylesheet" type="text/css" href="../static/profile.css">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</head>
+<style>
+	nav{
+		background:transparent;
+	}
+	body{
+		font-family: 'Segoe UI';
+		background-image: url('https://images.pexels.com/photos/3944454/pexels-photo-3944454.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#">My Profile</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1>File Uploader</h1>
+    
+		<form method='POST' action="{% url 'file-uploader' %}"  enctype="multipart/form-data">
+      		{% csrf_token %}
+			{{ form }}
+			<button class='btn btn-primary' type="submit" id="submit-button">Submit</button>			
+		</form>
+	</div>
+	{% comment %} <script src="../profile.js"></script> {% endcomment %}
+</body>
+</html>
